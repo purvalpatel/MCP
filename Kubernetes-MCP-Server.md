@@ -75,6 +75,10 @@ volumes:
   open-webui:
 
 ```
+Start containers:
+```
+sudo docker-compose up -d
+```
 
 ### Login Open-WebUI and configure kubernetes-MCP server.
 1. Settings -> Admin Panel -> Settings
