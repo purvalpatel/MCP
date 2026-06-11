@@ -115,3 +115,35 @@ These MCP servers are different process/applications that expose tools and data 
 sudo docker run -d   --name open-webui   -e HF_TOKEN=hf_YDGBxXkoavfqaejOccmECffNBasgxcKhbelWKjXecJ   -p 3000:8080   -v open-webui:/app/backend/data   ghcr.io/open-webui/open-webui:main
 ```
 - You can connect open-webui with the  local deployed LLM server and it works.
+
+List available MCP servers:
+```
+| Category      | MCP Server              | Use Case                            |
+| ------------- | ----------------------- | ----------------------------------- |
+| Kubernetes    | Kubernetes MCP          | Manage clusters, pods, deployments  |
+| Git           | Git MCP                 | Repository operations               |
+| GitHub        | GitHub MCP              | PRs, issues, workflows              |
+| GitLab        | GitLab MCP              | Pipelines, merge requests, projects |
+| Docker        | Docker MCP              | Containers and images               |
+| ArgoCD        | ArgoCD MCP              | GitOps management                   |
+| Terraform     | Terraform MCP           | Infrastructure as Code              |
+| AWS           | AWS MCP                 | Cloud operations                    |
+| Azure         | Azure MCP               | Azure resource management           |
+| GCP           | GCP MCP                 | Google Cloud management             |
+| Cloudflare    | Cloudflare MCP          | DNS, WAF, CDN management            |
+| PostgreSQL    | PostgreSQL MCP          | Database querying                   |
+| MySQL         | MySQL MCP               | Database administration             |
+| MongoDB       | MongoDB MCP             | Document database operations        |
+| Redis         | Redis MCP               | Cache management                    |
+| Elasticsearch | Elasticsearch MCP       | Search and observability            |
+| Prometheus    | Prometheus MCP          | Metrics querying                    |
+| Grafana       | Grafana MCP             | Dashboard management                |
+| Slack         | Slack MCP               | Notifications and messaging         |
+| Jira          | Jira MCP                | Project management                  |
+| Notion        | Notion MCP              | Documentation                       |
+| Confluence    | Confluence MCP          | Knowledge base                      |
+| Figma         | Figma MCP               | Design integration                  |
+| Playwright    | Playwright MCP          | Browser automation                  |
+| Filesystem    | Official Filesystem MCP | Local file access                   |
+| Memory        | Official Memory MCP     | Persistent AI memory                |
+```
