@@ -1,3 +1,7 @@
+A Kubernetes MCP Server allows an AI assistant (ChatGPT, Claude, Cursor, Copilot, Open WebUI, etc.) to interact with your Kubernetes cluster using natural language instead of manually running kubectl commands. It acts as a bridge between the LLM and the Kubernetes API. <br>
+
+You can ask: <br>
+>Show me all failed pods in the cluster.
 
 ## Setup Kubernetes MCP Server.
 
