@@ -10,7 +10,32 @@ You can ask: <br>
 npx kubernetes-mcp-server@latest    --port 8080
 ```
 OR
-docker-compose.yaml for `Kubernetes-MCP server` and `open-webui`
+docker-compose.yaml
+```
+## This is kubernetes MCP
+  kubernetes-mcp:
+    image: node:22-alpine
+    container_name: kubernetes-mcp
+    restart: unless-stopped
+
+    command: >
+      sh -c "
+      npm install -g kubernetes-mcp-server &&
+      kubernetes-mcp-server --port 8080
+      "
+
+    ports:
+      - "8080:8080"
+
+    environment:
+      KUBECONFIG: /root/.kube/config
+
+    volumes:
+      - ~/.kube/config:/root/.kube/config:ro
+```
+
+### Final Combile docker-compose.yaml for `Kubernetes-MCP server` and `open-webui`
+
 ```
 services:
 ## This is Gitlab MCP
