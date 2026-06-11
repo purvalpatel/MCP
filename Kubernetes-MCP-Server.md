@@ -13,7 +13,7 @@ OR
 docker-compose.yaml for `Kubernetes-MCP server` and `open-webui`
 ```
 services:
-
+## This is Gitlab MCP
   mcpo:
     image: python:3.11-slim
     container_name: mcpo-gitlab
@@ -34,7 +34,7 @@ services:
     ports:
       - "8000:8000"
 
-
+## This is kubernetes MCP
   kubernetes-mcp:
     image: node:22-alpine
     container_name: kubernetes-mcp
